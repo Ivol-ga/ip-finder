@@ -1,0 +1,29 @@
+{
+  "name": "code-proj-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start1": "parcel index.html --open",
+    "start": "NODE_OPTIONS='--experimental-specifier-resolution=node' node src/index.js",
+    "build": "parcel build index.html --out-dir=build",
+    "predeploy": "npm run build",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chokidar": "^3.5.3",
+    "parcel-bundler": "^1.12.5",
+    "vercel": "^28.20.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "leaflet": "^1.9.3",
+    "node-forge": "^1.3.1"
+  },
+  "overrides": {
+    "glob-parent": "6.0.2"
+  }
+}
